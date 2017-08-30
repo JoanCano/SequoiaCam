@@ -1,12 +1,8 @@
 # SequoiaCam
----
-title: Lectura y decodificación de los metadatos en imágenes de la cámara Sequoia
-author: "Joan Cano"
-output:
-  html_document: default
-  pdf_document: default
----
-## Tipos de metadatos en imágenes
+
+## Lectura y decodificación de los metadatos en imágenes de la cámara Sequoia
+
+### Tipos de metadatos en imágenes
 
 Los metadatos son datos que nos proporcionan información sobre los datos, entre ellos los descriptivos, estructurales y administrativos.
 Estos pueden ser escritos en iḿagenes como las que toma nuestra cámara, que ayudarán en el proceso posterior de producción a partir de palabras clave.
@@ -21,7 +17,7 @@ Las imágenes pueden contener diferentes metadatos, regidos por las normas cread
 - PLUS
 - VRA
 
-## Librerías de lectura de metadatos: Exiftools
+### Librerías de lectura de metadatos: Exiftools
 Al haber tratado ya los metadatos de las imágenes de la [Sequoia](http://tecnitop.com/es/camaras-accesorios-y-software/), avanzo la necesidad de interpretar metadatos del estandar [XMP](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform#Free_software_and_open-source_tools_.28read.2Fwrite_support.29), una marca registrada por Adobe Systems que cuando pasó a ser ISO, dejó se ser propietaria.
 
 Por lo tanto, necesitaremos buscar un software (libre) capaz de leer XMP, a continuación los que he probado:    
@@ -38,7 +34,7 @@ GIMP y ImageMagick vienen por defecto en Debian. Sin embargo Exiftool lo tenemos
  apt-cache install libimage-exiftool-perl
 ```
 
-# Mostrar los metadatos de una imagen
+### Mostrar los metadatos de una imagen
 
 ```{bash, eval=FALSE}
 exiftool imagen.tif
